@@ -1,20 +1,19 @@
-
-#sidebar-box[sidebarcommand="viewHistorySidebar"], 
+#sidebar-box[sidebarcommand="viewHistorySidebar"],
 #sidebar-box[sidebarcommand="viewBookmarksSidebar"] {
   background-color: var(--zen-themed-toolbar-bg) !important;
   border-radius: var(--zen-border-radius);
-/*   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1); */
+  /*   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1); */
   border: 1px solid var(--zen-colors-border);
-/*   padding: var(--zen-toolbox-padding) !important; */
+  /*   padding: var(--zen-toolbox-padding) !important; */
   position: fixed;
   z-index: 1;
   height: 80vh !important;
   margin: 10px;
-/*   width: 20em !important; */
-/*   top: 10vh !important; */
-/*   right: 0.6vw !important; */
-/*   transform: translateX(105%); */
-/*   transition: all 0.2s ease-out-in; */
+  /*   width: 20em !important; */
+  /*   top: 10vh !important; */
+  /*   right: 0.6vw !important; */
+  /*   transform: translateX(105%); */
+  /*   transition: all 0.2s ease-out-in; */
 }
 
 /* #sidebar-box[hidden="true"][sidebarcommand="viewHistorySidebar"] {
@@ -28,4 +27,17 @@
  */
 splitter.chromeclass-extrachrome {
   display: none;
+}
+
+.tab-background {
+  position: relative;
+}
+
+.tab-background[selected=""]::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  width: 3px;
+  height: 100%;
+  background-color: var(--zen-primary-color);
 }
